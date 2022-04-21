@@ -1,4 +1,3 @@
-
 # This is a basic workflow to help you get started with Actions
 
 name: React App Deploy to Surge
@@ -45,7 +44,7 @@ jobs:
         run: npm install --global surge
         
       - name: Deploy to surge
-        run: surge ./build saroshexpensetracker.surge.sh --token ${{ Secrets.SURGE_TOKEN}}
+        run: surge ./build saroshexpensetrackerapp.surge.sh --token ${{ Secrets.SURGE_TOKEN_EXP}}
         
    
 
