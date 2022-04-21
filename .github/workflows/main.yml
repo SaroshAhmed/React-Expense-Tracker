@@ -41,7 +41,7 @@ jobs:
         run: yarn
        
       - name: Install Surge
-        run: npm install --global surge
+        run: npm install --global surge 
         
       - name: Deploy to surge
         run: surge ./build saroshexpensetrackerapp.surge.sh --token ${{ Secrets.SURGE_TOKEN_EXP}}
